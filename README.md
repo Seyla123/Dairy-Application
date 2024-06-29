@@ -1,93 +1,182 @@
-# Diary Web App
+# CRUD Diary
 
+This project is a simple CRUD (Create, Read, Update, Delete) diary application built using HTML, CSS, and JavaScript. The goal is to provide a user-friendly interface for managing daily diary entries, where users can create, view, edit, and delete their notes, all within a single page.
 
+## Table of Contents
 
-## Getting started
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## Project Overview
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+This project provides a single-page diary application where users can:
 
-## Add your files
+1. Create new diary entries.
+2. View existing entries.
+3. Update any diary entry.
+4. Delete entries that are no longer needed.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+**Link to Live Demo** - [CRUD Diary](https://your-live-demo-link.com)
 
-```
-cd existing_repo
-git remote add origin https://git.clp.kr/anbschool/2nd/hexcode/seav-seyla/diary-web-app.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.clp.kr/anbschool/2nd/hexcode/seav-seyla/diary-web-app/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+The application is designed with a focus on simplicity and ease of use, leveraging only front-end technologies to perform all CRUD operations without requiring a backend server.
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+1. Clone the repository:
+    ```bash
+    git clone https://your-repo-link.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd crud-diary
+    ```
+
+3. Open the `index.html` file in your browser to view the project.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+After opening `index.html` in your browser, you can start using the diary application:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- **Create**: Add a new diary entry using the provided form.
+- **Read**: Browse and view your list of diary entries.
+- **Update**: Edit any existing diary entry.
+- **Delete**: Remove an unwanted diary entry.
+
+## Features
+
+- **Single-page application**: All CRUD operations are performed on the same page.
+- **Responsive design**: Optimized for both desktop and mobile devices.
+- **User-friendly interface**: Simple and intuitive to use.
+- **Client-side storage**: Entries are stored in the browser’s local storage.
+
+## Technologies Used
+
+- **HTML**: For structuring the content.
+- **CSS**: For styling the application.
+- **JavaScript**: For handling CRUD operations and user interactions.
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Contributions are welcome! If you would like to contribute, please follow the Git-Flow branching strategy as outlined below:
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+![Git-Flow Diagram](https://github.com/Seyla123/Clone-Nike-Ind/assets/89925541/6be663ee-6f13-4466-92af-33aa549eb189)
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Git-Flow Branching Strategy
 
-## License
-For open source projects, say how it is licensed.
+1. **Main Branch**:
+   - The main branch represents the stable version of the codebase, containing production code.
+   - Avoid making direct changes to the main branch.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+2. **Feature Branches**:
+   - Create a feature branch from the develop branch for any new feature or bug fix.
+   - Work on your feature branch until it’s ready to be merged back into the develop branch.
+
+3. **Development (Develop) Branch**:
+   - This branch contains the latest development code and awaits integration into the main branch for upcoming releases.
+
+4. **Release Branches**:
+   - Use release branches for final adjustments and QA testing before a new release.
+   - Once stable, merge the release branch back into both main and develop branches.
+
+5. **Bugfix Branch**:
+   - Create a bugfix branch to address specific issues without affecting ongoing development.
+
+6. **Hotfix Branch**:
+   - Use a hotfix branch to quickly address critical issues in the production code, directly branching from the main branch.
+
+### Git-Flow Steps
+
+1. **Create a Remote Repository on GitHub**:
+   - Log in to your GitHub account and create a new repository.
+   - Set up the repository details and initialize with a README if desired.
+
+2. **Set Up a Local Repository**:
+   - Open Visual Studio Code or your preferred IDE.
+   - Initialize git and link your local repository to the remote:
+     ```bash
+     git init
+     git remote add origin <repository_URL>
+     ```
+
+3. **Work on Feature Branches**:
+   - Create and switch to a new feature branch:
+     ```bash
+     git checkout develop
+     git flow feature start feature_name
+     ```
+   - Make your changes, commit, and push:
+     ```bash
+     git add .
+     git commit -m "Commit message"
+     git flow feature publish feature_name
+     ```
+
+4. **Complete and Merge Features**:
+   - Once your feature is complete, create a pull request for review.
+   - After approval, finish and merge the feature into the develop branch:
+     ```bash
+     git flow feature finish feature_name
+     ```
+
+5. **Release and Bugfix Management**:
+   - Follow similar steps for creating and merging release and bugfix branches.
+
+6. **Handling Hotfixes**:
+   - For urgent fixes in production, create a hotfix branch directly from main:
+     ```bash
+     git checkout main
+     git flow hotfix start hotfix_name
+     ```
+
+   - Commit your changes, and merge into both main and develop branches upon completion:
+     ```bash
+     git flow hotfix finish hotfix_name
+     ```
+
+### Additional Git Commands
+
+- **Tracking Branches**:
+  - Establish tracking for remote branches:
+    ```bash
+    git flow feature track <feature_name>
+    ```
+
+- **Merging Branches**:
+  - Merge changes from one branch into another:
+    ```bash
+    git checkout main
+    git merge develop
+    ```
+
+- **Rebasing Branches**:
+  - Rebase a branch to move its commits on top of another branch:
+    ```bash
+    git checkout feature/branch_name
+    git rebase develop
+    ```
+
+- **Resetting Branches**:
+  - Reset a branch to a specific commit:
+    ```bash
+    git reset <commit_hash>
+    ```
+
+- **Checking Remote and Commit History**:
+  - View remote repositories and commit history:
+    ```bash
+    git remote -v
+    git log
+    ```
+
+## Contact
+
+For any questions or support, feel free to reach out:
+
+- **Your Name** - [your.email@example.com](mailto:your.email@example.com)
+- GitHub: [@yourusername](https://github.com/yourusername)
