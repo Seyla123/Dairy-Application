@@ -178,5 +178,5 @@ Contributions are welcome! If you would like to contribute, please follow the Gi
 
 For any questions or support, feel free to reach out:
 
-- **Your Name** - [your.email@example.com](mailto:your.email@example.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
+- **Seav Seyla** - [mrrseyla.758@gmail.com](mailto:mrrseyla.758@gmail.com)
+- GitLab: [@Seyla123](https://git.clp.kr/Seyla123)
