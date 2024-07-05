@@ -1,10 +1,11 @@
-# CRUD Diary
+# CRUD Diary Application
 
-This project is a simple CRUD (Create, Read, Update, Delete) diary application built using HTML, CSS, and JavaScript. The goal is to provide a user-friendly interface for managing daily diary entries, where users can create, view, edit, and delete their notes, all within a single page.
+This project is a web-based diary application offering a simple yet powerful interface for managing daily entries. Users can create, view, edit, and delete their diary notes. Additionally, the application now includes a user authentication system and a dashboard for a comprehensive overview of entries.
 
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Live Demo](#live-demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -14,18 +15,20 @@ This project is a simple CRUD (Create, Read, Update, Delete) diary application b
 
 ## Project Overview
 
-This project provides a single-page diary application where users can:
+CRUD Diary is designed as a user-friendly, multi-page application with the following key components:
 
-1. Create new diary entries.
-2. View existing entries.
-3. Update any diary entry.
-4. Delete entries that are no longer needed.
+1. **Login Page**: Secure user authentication.
+2. **Sign Up Page**: User registration for new accounts.
+3. **Dashboard**: Overview of entries and users, displaying the total number of entries and users with the most recent entries (up to 8).
+4. **Main Page**: Core CRUD functionalities with a form to add new entries and a section displaying all existing entries.
 
-**Link to Live Demo** - [CRUD Diary](https://seav-seyla-dairy-application.vercel.app/)
+**Link to Live Demo**: [CRUD Diary](https://seav-seyla-dairy-application.vercel.app/)
 
-The application is designed with a focus on simplicity and ease of use, leveraging only front-end technologies to perform all CRUD operations without requiring a backend server.
+The application leverages front-end technologies to perform all operations and stores data on the client-side, eliminating the need for a backend server.
 
 ## Installation
+
+To run the project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
@@ -37,140 +40,134 @@ The application is designed with a focus on simplicity and ease of use, leveragi
     cd diary-web-app
     ```
 
-3. Open the `index.html` file in your browser to view the project.
+3. Open the `index.html` file in your browser to launch the application.
 
 ## Usage
 
-After opening `index.html` in your browser, you can start using the diary application:
+After opening `index.html` in your browser:
 
-- **Create**: Add a new diary entry using the provided form.
-- **Read**: Browse and view your list of diary entries.
-- **Update**: Edit any existing diary entry.
-- **Delete**: Remove an unwanted diary entry.
+1. **Sign Up**: Create a new user account if you don't already have one.
+2. **Login**: Use your credentials to log in.
+3. **Dashboard**: View the total entries and users, with recent entries displayed as cards (limited to 8).
+4. **Main Page**: Manage your diary entries with the following features:
+    - **Create**: Use the form to add a new diary entry.
+    - **Read**: Browse and view your existing entries.
+    - **Update**: Edit any of your entries.
+    - **Delete**: Remove any unwanted entries.
 
 ## Features
 
-- **Single-page application**: All CRUD operations are performed on the same page.
-- **Responsive design**: Optimized for both desktop and mobile devices.
-- **User-friendly interface**: Simple and intuitive to use.
-- **Client-side storage**: Entries are stored in the browser’s local storage.
+- **Multi-Page Application**: Includes login, sign-up, dashboard, and main diary management pages.
+- **User Authentication**: Secure login and registration system.
+- **Dashboard**: Summary view with recent entries and total counts of entries and users.
+- **CRUD Operations**: Full functionality to create, read, update, and delete diary entries.
+- **Responsive Design**: Optimized for both desktop and mobile use.
+- **Client-Side Storage**: Uses local storage for saving entries.
 
 ## Technologies Used
 
-- **HTML**: For structuring the content.
-- **CSS**: For styling the application.
-- **JavaScript**: For handling CRUD operations and user interactions.
+- **HTML**: Markup language for structuring the application.
+- **CSS**: Stylesheets for designing the layout and appearance.
+- **JavaScript**: Programming language for dynamic functionality and CRUD operations.
 
-**Convention Guide** - [Link Here](https://outgoing-oval-b13.notion.site/Seav-Seyla-Diary-Web-Application-08b9b87d74f44e8ba3f6ffe3580cf4d4?pvs=4)
+**Convention Guide**: [Seav Seyla's Diary Web Application Guide](https://outgoing-oval-b13.notion.site/Seav-Seyla-Diary-Web-Application-08b9b87d74f44e8ba3f6ffe3580cf4d4?pvs=4)
 
 ## Contributing
 
-Contributions are welcome! If you would like to contribute, please follow the Git-Flow branching strategy as outlined below:
+Contributions are welcome! Please adhere to the Git-Flow branching strategy for a smooth collaboration process:
 
 ![Git-Flow Diagram](https://github.com/Seyla123/Clone-Nike-Ind/assets/89925541/6be663ee-6f13-4466-92af-33aa549eb189)
 
 ### Git-Flow Branching Strategy
 
 1. **Main Branch**:
-   - The main branch represents the stable version of the codebase, containing production code.
-   - Avoid making direct changes to the main branch.
+   - Represents the stable production code.
+   - Direct changes are avoided here.
 
 2. **Feature Branches**:
-   - Create a feature branch from the develop branch for any new feature or bug fix.
-   - Work on your feature branch until it’s ready to be merged back into the develop branch.
+   - Used for developing new features or fixing bugs.
+   - Derived from and merged back into the `develop` branch.
 
 3. **Development (Develop) Branch**:
-   - This branch contains the latest development code and awaits integration into the main branch for upcoming releases.
+   - Contains the latest development code.
+   - Prepares features for the next release.
 
 4. **Release Branches**:
-   - Use release branches for final adjustments and QA testing before a new release.
-   - Once stable, merge the release branch back into both main and develop branches.
+   - For final tweaks and testing before release.
+   - Merged back into both `main` and `develop`.
 
-5. **Bugfix Branch**:
-   - Create a bugfix branch to address specific issues without affecting ongoing development.
+5. **Bugfix Branches**:
+   - Address specific issues without disrupting ongoing development.
 
-6. **Hotfix Branch**:
-   - Use a hotfix branch to quickly address critical issues in the production code, directly branching from the main branch.
+6. **Hotfix Branches**:
+   - For urgent fixes to the production code, branched directly from `main`.
 
 ### Git-Flow Steps
 
-1. **Create a Remote Repository on GitHub**:
-   - Log in to your GitHub account and create a new repository.
-   - Set up the repository details and initialize with a README if desired.
+1. **Create a Remote Repository**:
+   - Set up a new repository on GitHub.
 
-2. **Set Up a Local Repository**:
-   - Open Visual Studio Code or your preferred IDE.
-   - Initialize git and link your local repository to the remote:
+2. **Initialize a Local Repository**:
+   - Use Git to initialize and link your local repository:
      ```bash
      git init
      git remote add origin <repository_URL>
      ```
 
 3. **Work on Feature Branches**:
-   - Create and switch to a new feature branch:
+   - Create and work on a new feature branch:
      ```bash
      git checkout develop
      git flow feature start feature_name
      ```
-   - Make your changes, commit, and push:
+   - Commit and push changes:
      ```bash
      git add .
      git commit -m "Commit message"
      git flow feature publish feature_name
      ```
 
-4. **Complete and Merge Features**:
-   - Once your feature is complete, create a pull request for review.
-   - After approval, finish and merge the feature into the develop branch:
+4. **Merge and Complete Features**:
+   - Merge completed features back into `develop`:
      ```bash
      git flow feature finish feature_name
      ```
 
-5. **Release and Bugfix Management**:
-   - Follow similar steps for creating and merging release and bugfix branches.
+5. **Manage Releases and Bugfixes**:
+   - Follow similar steps for handling releases and bugfixes.
 
-6. **Handling Hotfixes**:
-   - For urgent fixes in production, create a hotfix branch directly from main:
+6. **Apply Hotfixes**:
+   - For critical production issues:
      ```bash
      git checkout main
      git flow hotfix start hotfix_name
      ```
 
-   - Commit your changes, and merge into both main and develop branches upon completion:
+   - Merge hotfixes into both `main` and `develop`:
      ```bash
      git flow hotfix finish hotfix_name
      ```
 
 ### Additional Git Commands
 
-- **Tracking Branches**:
-  - Establish tracking for remote branches:
+- **Tracking and Rebasing**:
+  - Track remote branches and rebase your work:
     ```bash
     git flow feature track <feature_name>
-    ```
-
-- **Merging Branches**:
-  - Merge changes from one branch into another:
-    ```bash
-    git checkout main
-    git merge develop
-    ```
-
-- **Rebasing Branches**:
-  - Rebase a branch to move its commits on top of another branch:
-    ```bash
     git checkout feature/branch_name
     git rebase develop
     ```
 
-- **Resetting Branches**:
-  - Reset a branch to a specific commit:
+- **Merging and Resetting**:
+  - Merge branches and reset to specific commits:
     ```bash
+    git checkout main
+    git merge develop
     git reset <commit_hash>
     ```
 
-- **Checking Remote and Commit History**:
-  - View remote repositories and commit history:
+- **Remote and Commit History**:
+  - View and manage remote branches and commit history:
     ```bash
     git remote -v
     git log
@@ -178,7 +175,7 @@ Contributions are welcome! If you would like to contribute, please follow the Gi
 
 ## Contact
 
-For any questions or support, feel free to reach out:
+For questions or support, please reach out to:
 
 - **Seav Seyla** - [mrrseyla.758@gmail.com](mailto:mrrseyla.758@gmail.com)
 - GitLab: [@Seyla123](https://git.clp.kr/Seyla123)
